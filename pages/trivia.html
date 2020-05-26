@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trivia</title>
+    <link rel="stylesheet" type="text/css" href="../assets/css/style.css">
+</head>
+
+<body style="background-color: rgb(49, 49, 175);">
+    <script type="text/javascript">
+       
+        var correcto = 0;         
+        var erradas=0;          
+        var multiplicacion = prompt ("¿En que año estamos?");          
+        if (multiplicacion == "2020"){             
+            correcto=1;             
+            alert("Correcto")         
+            }else{             
+                erradas=1;             
+                alert("Incorrecto")         
+                }          
+                var MC = prompt ("¿Cuanto es 5km en metros?");          
+                if (MC == "5000"){             
+                    correcto=correcto+1;             
+                    alert("Correcto")         
+                    }else{             
+                        erradas=erradas+1;             
+                        alert("Incorrecto")         
+                        }          
+                        var suma = prompt ("¿En que año fue la guerra de las malvinas?");          
+                        if (suma == "1982"){             
+                            correcto=correcto+1;             
+                            alert("Correcto")         
+                            }else{             
+                                erradas=erradas+1;             
+                                alert("Incorrecto")         
+                                }
+        alert("Hiciste " + correcto + " correctas");
+        alert("Hiciste " + erradas + "Incorrectas");
+    </script>
+     <a class="a" href="/index.html"><h2 style="left: 570px;" class="volver">Volver a el Porfolio</h2></a>
+     <a class="a" href="/pages/Indice.html"><h2 style="top: 100px; left: 595px;" class="volver">Volver a indice</h2></a>
+</body>
+</html>

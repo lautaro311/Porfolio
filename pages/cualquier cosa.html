@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="../assets/css/style.css">
+</head>
+<script type="text/javascript">
+function cambiafondo(x){
+    console.log(x.value);
+
+    var body = document.getElementById("body")
+    body.style.backgroundColor = x.value
+}
+
+
+</script>
+<body style="background-color: rgb(49, 49, 175);" id="body">
+    <a class="a" href="/index.html"><h2 style="left: 570px;" class="volver">Volver a el Porfolio</h2></a>
+    <a class="a" href="/pages/Indice.html"><h2 style="top: 100px; left: 595px;" class="volver">Volver a indice</h2></a>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <h4 class="opciones" style="left: 50px;">Hola si quieres puedes cambiar el color del fondo con las opciones de abajo</h4>
+    
+    <select class="select" name="fondo" id="fondo" onchange="cambiafondo(this)">
+          <option value="red">Rojo</option>
+          <option value="green">verde</option>
+          <option value="brown">marron</option>
+          <option value="blueviolet">violeta</option>
+          <option value="beige">beige</option>
+          <option value="rgb(49, 49, 175)">color original</option>
+    </select>
+    
+</body>
+</html>

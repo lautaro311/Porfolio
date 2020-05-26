@@ -1,0 +1,55 @@
+<html lang="en"><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body style="background-color: rgb(49, 49, 175);">
+    <!--<div>
+        <h1 class="letra">Formulario</h1>
+        <div style="text-align: center;">
+            <h2 class="letra">Ingrese sus datos por favor:</h2>
+            <br>
+            <p class="letra">Nombre:</p>
+            <input type="text" class="letra" maxlength="20" required="">
+            <p class="letra">Apellido:</p>
+            <input type="text" class="letra" maxlength="20" required="">
+            <br>
+            <p class="letra">Edad:</p>
+            <input type="number" maxlength="3" required="">
+            <p class="letra">Videojuego favorito:</p>
+            <input type="text" required="">
+            <br>
+            <br>
+            <button type="submit">Enviar</button>
+            <br>
+            <br>
+            <p id="letra"></p>
+        </div>-->
+        <div style="text-align: center;">
+        <h1 class="formulario" class="letra">Formulario</h1>
+              <h2 class="titulos" class="letra">Ingrese sus datos por favor:</h2>
+                    <p class="textos" class="letra">Nombre:</p>
+                         <input type="text" id="Nombre" maxlength="20" required="">
+                              <p class="textos" class="letra">Apellido:</p>
+                              <input type="text" id="Apellido" maxlength="20" required="">
+                              <p class="textos" class="letra">Edad:</p>     
+                              <input type="number" id="Edad" maxlength="3" required="">     
+                              <p class="textos" class="letra">Videojuego favorito de la infancia:</p>
+                              <input type="text" id="Juego" required="">      
+                              <button id="boton" type="submit">Enviar</button>                  
+                              <p id="parrafo"></p>
+    </div>
+    <script type="text/javascript">
+         var boton = document.getElementById("boton");     
+         boton.onclick = function(){                      
+             var Nombre = document.getElementById("Nombre").value;
+             var Apellido = document.getElementById("Apellido").value;         
+             var Edad = document.getElementById("Edad").value;         
+             var Juego = document.getElementById("Juego").value;                 
+              document.getElementById("parrafo").innerHTML = "Bienvenido a mi página " + Nombre + " " + Apellido + "!" + " Así que tenés " + Edad + " años y tu juego favorito es " + Juego + ". Siempre es un buen momento para distenderte un rato!"  ;     }
+                   </script>
+<a class="a" href="/index.html"><h2 style="left: 1100px;" class="volver">Volver a el Porfolio</h2></a>
+<a class="a" href="/pages/Indice.html"><h2 style="top: 480px; left: 1120px;" class="volver">Volver a indice</h2></a>
+
+</body></html>

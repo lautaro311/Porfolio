@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="../assets/css/style.css">
+</head>
+<body style="background-color: rgb(49, 49, 175);">
+  <h1 class="opciones">Hola! me podrias decir algo que ames mucho?</h1>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <h4 class="opciones" style="font-size: large;">Apreta enter luego de terminar de escribir</h4>
+  <br>
+  <br> 
+  <br>
+  <br>
+  <br> 
+  <br> 
+  <input type="text" id="text"> 
+  <div id="result" style="display:none;">Waw gracias por compartir eso conmigo :)</div>
+  <script type="text/javascript">
+var text = document.getElementById("text");
+var result = document.getElementById("result");
+
+const KEYENTER = 13;
+
+text.addEventListener("keypress", function(evento) {
+    if(evento.keyCode == KEYENTER)
+    result.style.display = "block";
+})
+
+</script>
+<a class="a" href="/index.html"><h2 style="left: 1100px;" class="volver">Volver a el Porfolio</h2></a>
+<a class="a" href="/pages/Indice.html"><h2 style="top: 80px; left: 1120px;" class="volver">Volver a indice</h2></a>
+
+</body>
+</html>
